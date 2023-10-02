@@ -397,14 +397,23 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px){
-    /* #header{
-        background-image: url();
-    } */
+    #header{
+        background-image: url(img/logg1.png);
+
+    }
+
+
 
     .header-text {
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 18px;
     }
+
+    .header-text h1 span {
+        color: #ffd901;
+
+    }
+
 
     .header-text h1{
         font-size: 30px;
@@ -461,7 +470,7 @@ nav .fa-solid {
     }
 
     .social-icons{
-        margin-left: 30px;
+        margin-left: 25px;
     }
 
     .contact-left, .contact-right {
