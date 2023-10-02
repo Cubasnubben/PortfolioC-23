@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Cuba Portfolio 2023</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logg2.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend-Developer</p>
+          <h1>
+            <span>Cuba</span>
+            Gustafsson
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------About------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/pekkaport.png" alt="img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">Vem är jag?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              tempore voluptas sed sint cumque exercitationem beatae eligendi
+              repellendus ipsa incidunt, quod ipsam, nisi aut amet quae libero,
+              quas nostrum quaerat. Dolores ipsa id impedit alias, odio ipsam
+              architecto voluptates ducimus error, aperiam illo rerum inventore?
+              At doloribus exercitationem vero recusandae, id nesciunt quod
+              perferendis eum. Vero eos tenetur impedit tempora. Nesciunt
+              expedita velit dolores repellendus dolorum omnis vero accusamus
+              delectus iusto! Aliquid, ab amet nesciunt velit optio ut dolor vel
+              quas, id minus ipsum perspiciatis exercitationem ipsa similique
+              facilis voluptate.
+            </p>
+            <div class="tabtitles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Kompetens
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Erfarenhet
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Utbildning</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Utveckling</li>
+                <li><span>React</span><br />React Framework Design</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Pågående</span><br />Praktik på Onslip Cloud
+                </li>
+                <li><span>2022 - 2023</span><br />Praktik på Onslip</li>
+                <li><span>2021 - 2021</span><br />Praktik på Formpipe</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />Frontendutveckling på ITHS
+                  Stockholm
+                </li>
+                <li>
+                  <span>2022</span><br />React at Folkuniversitetet Göteborg
+                </li>
+                <li>
+                  <span>2020 - 2022</span><br />Systemutveckling .Net C# på TUC
+                  Yrkeshögskola
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ Services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">Mina Tjänster</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias aliquam delectus debitis? Accusantium deserunt quos,
+              veritatis itaque architecto blanditiis laborum.
+            </p>
+            <a href="#">Läs vidare</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI / UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias aliquam delectus debitis? Accusantium deserunt quos,
+              veritatis itaque architecto blanditiis laborum.
+            </p>
+            <a href="#">Läs vidare</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React / Vue</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias aliquam delectus debitis? Accusantium deserunt quos,
+              veritatis itaque architecto blanditiis laborum.
+            </p>
+            <a href="#">Läs vidare</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------PORTFOLIO-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Mina Projekt</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/musicplayer.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Music Player</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
+                dolor praesentium! Quaerat?
+              </p>
+              <a href="#"><i class="fa-solid fa-music"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/webshop.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Webshop</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
+                dolor praesentium! Quaerat?
+              </p>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/game.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Games</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
+                dolor praesentium! Quaerat?
+              </p>
+              <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Se mer</a>
+      </div>
+    </div>
+
+    <!---------------------Kontakt----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Kontakta mig</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>hejsansvejsan@pådejsan.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+46123-456789</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="img/cuba.jpg" download class="btn btncv">Ladda ner CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Namn" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                placeholder="Meddelande"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btncv">Skicka</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Cuba Gustafsson | 2023
+          <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
