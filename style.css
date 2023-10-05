@@ -111,7 +111,7 @@ width: 100%;
 .subtitle{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(32, 110, 77);
+    color: rgb(2, 212, 125);
 }
 
 .tabtitles{
@@ -283,6 +283,7 @@ height: 100%;
 .btn {
     display: block;
     margin: 50px auto;
+    width: -moz-fit-content;
     width: fit-content;
     border: 1px solid rgb(74, 196, 145);
     padding: 14px 50px;
